@@ -1,0 +1,71 @@
+body{
+  background:#071018;
+  color:#e7f3fb;
+  font-family:sans-serif;
+  margin:0;
+  padding:0;
+  direction:rtl;
+}
+.container{max-width:900px;margin:auto;padding:20px}
+.card{
+  background:#0b1820;
+  padding:16px;
+  border-radius:12px;
+  box-shadow:0 0 20px #0008;
+}
+.btn{
+  padding:10px 14px;
+  border-radius:10px;
+  border:0;
+  cursor:pointer;
+  margin:4px 0;
+}
+.primary{
+  background:#1f6feb;
+  color:white;
+}
+.danger{
+  background:#e04b4b;
+  color:white;
+}
+.status{
+  font-size:14px;
+  color:#9fb7c9;
+}
+.label{font-size:14px;color:#9fb7c9;margin-top:10px}
+.textarea{
+  width:100%;
+  min-height:70px;
+  margin-top:6px;
+  background:#081015;
+  color:#d9ebff;
+  border:1px solid #223;
+  border-radius:8px;
+  padding:10px;
+}
+.log{
+  background:#061018;
+  color:#cfe8ff;
+  padding:10px;
+  margin-top:12px;
+  height:200px;
+  overflow:auto;
+  border-radius:8px;
+}
+.grid{
+  display:grid;
+  gap:10px;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+}
+.pattern{
+  background:#09151c;
+  padding:8px;
+  border-radius:8px;
+  border:1px solid #222;
+  cursor:pointer;
+}
+.pattern .title{
+  text-align:center;
+  font-size:14px;
+  margin-top:6px;
+}
