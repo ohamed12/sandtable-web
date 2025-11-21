@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SandTable — تحكم الطاولة</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>SandTable — لوحة تحكم الطاولة</h1>
+      <p class="sub">اتصل بجهاز ESP32 عبر البلوتوث ثم اختر نمطاً واضغط ابدأ</p>
+    </header>
+
+    <section class="card">
+      <div class="row">
+        <button id="btnConnect" class="btn primary">اتصل بالبلوتوث</button>
+        <div id="status" class="status">حالة: غير متصل</div>
+      </div>
+
+      <label class="label">اختَر نمطاً جاهزاً:</label>
+      <div class="grid" id="patternList"></div>
+
+      <div class="controls">
+        <select id="patternSelect" class="select">
+          <option value="">-- اختر نمط --</option>
+        </select>
+        <button id="btnStart" class="btn primary">ابدأ</button>
+        <button id="btnStop" class="btn danger">إيقاف</button>
+      </div>
+
+      <label class="label">أمر مخصص</label>
+      <textarea id="custom" class="textarea" placeholder="G1 R=30 T=90 S=60"></textarea>
+
+      <div class="file-row">
+        <input type="file" id="fileInput" accept=".txt" class="file">
+        <button id="btnSendFile" class="btn">إرسال الملف</button>
+      </div>
+
+      <pre id="log" class="log"></pre>
+    </section>
+
+    <footer class="footer">
+      <small>يجب فتح الموقع عبر HTTPS حتى يعمل البلوتوث</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
